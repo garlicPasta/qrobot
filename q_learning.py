@@ -44,7 +44,7 @@ class QLearning:
                 max_q = current_q
         assert len(action_list) > 0
         if len(action_list) == 1:
-            return action
+            return action_list
         return random.choice(action_list)
 
     def learn(self, state, new_state, action, reward):
